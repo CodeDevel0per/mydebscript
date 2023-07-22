@@ -2,7 +2,7 @@ echo "Please wait here!"
 sudo apt install nala -y
 
 sudo nala install tasksel
-sudo exec tasksel
+sudo tasksel
 
 sudo apt install wget -y
 sudo nala fetch
@@ -17,7 +17,7 @@ cd ~
 echo "noefetch" >> .bashrc
 
 echo "Adding brave"
-sudo nala install curl
+sudo nala install curl -y
 
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
@@ -25,7 +25,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 
 sudo nala update
 
-sudo nala install brave-browser
+sudo nala install brave-browser -y
 
 echo "Downloading Afterglow Cursor to Downloads"
 cd ~/Downloads
