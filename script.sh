@@ -1,5 +1,9 @@
 echo "Please wait here!"
 sudo apt install nala -y
+
+sudo nala install tasksel
+sudo exec tasksel
+
 sudo apt install wget -y
 sudo nala fetch
 mkdir DebInstall
