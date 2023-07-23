@@ -1,8 +1,9 @@
 echo "Please wait here!"
 sudo apt install nala -y
 
-sudo nala install cinnamon-desktop-environment
-sudo nala install cinnamon
+sudo nala install cinnamon-desktop-environment -y
+sudo nala install cinnamon -y
+sudo nala install lightdm -y
 
 sudo apt install wget -y
 sudo nala fetch
