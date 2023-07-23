@@ -15,7 +15,7 @@ sudo nala install ./google-chrome-stable_current_amd64.deb -y
 
 sudo nala install micro neofetch -y
 cd ~
-echo "neofetch --ascii_distro gentoo\ngsettings set org.gnome.desktop.background picture-uri file:///root/wallpaper-wave-Sea-Dark.png\necho \"Please open your .bashrc file and remove last 2 lines\"" >> .bashrc
+echo "neofetch --ascii_distro gentoo\n~/post_install.sh" >> .bashrc
 
 echo "Adding brave"
 sudo nala install curl -y
@@ -48,18 +48,11 @@ git clone "https://github.com/vinceliuice/Lavanda-gtk-theme"
 cd Lavanda-gtk-theme/
 ./install.sh -t sea -c dark -s compact -i debian
 ./install.sh -t sea -c dark -s compact -i debian -l
-cd wallpaper
-sudo mv wallpaper-wave-Sea-Dark.png /root
 
 cd ~/Downloads
 git clone "https://github.com/vinceliuice/Colloid-icon-theme"
 cd "Colloid-icon-theme/"
 ./install.sh -s nord -t teal
-
-gsettings set org.cinnamon.theme name 'Lavanda-Sea-Dark'
-gsettings set org.cinnamon.desktop.interface icon-theme 'Colloid-teal-nord-dark'
-gsettings set org.cinnamon.desktop.wm.preferences theme 'Lavanda-Sea-Dark'
-gsettings set org.cinnamon.desktop.interface gtk-theme 'Lavanda-Sea-Dark'
 
 sudo nala install flatpak -y
 sudo nala install gnome-software-plugin-flatpak gnome-software -y
