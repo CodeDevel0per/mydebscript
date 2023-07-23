@@ -56,6 +56,8 @@ gsettings set org.gnome.desktop.background picture-uri file:///usr/share/backgro
 sudo nala install flatpak -y
 sudo nala install gnome-software-plugin-flatpak -y
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install com.visualstudio.code -y
+sudo flatpak install com.spotify.Client -y
 echo "Your system setup is now complete!"
 sleep 1
 printf "-"
