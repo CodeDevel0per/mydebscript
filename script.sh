@@ -16,6 +16,7 @@ sudo nala install ./google-chrome-stable_current_amd64.deb -y
 sudo nala install micro neofetch -y
 cd ~
 echo "neofetch --ascii_distro gentoo\n~/post_install.sh" >> .bashrc
+mv post_install.sh ~
 
 echo "Adding brave"
 sudo nala install curl -y
